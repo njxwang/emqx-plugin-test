@@ -12,7 +12,7 @@
 %% See the License for the specific language governing permissions and
 %% limitations under the License.
 
--module(emqx_plugin_template_sup).
+-module(emqx_plugin_test_sup).
 
 -behaviour(supervisor).
 
@@ -23,6 +23,4 @@
 start_link() ->
     supervisor:start_link({local, ?MODULE}, ?MODULE, []).
 
-init([]) ->
-    {ok, { {one_for_all, 0, 1}, []} }.
-
+init([]) -> {ok, {{one_for_all, 0, 1}, []}}.

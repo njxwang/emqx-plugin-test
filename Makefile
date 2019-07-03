@@ -1,4 +1,7 @@
 ## shallow clone for speed
+PROJECT = emqx_plugin_test
+PROJECT_DESCRIPTION = EMQ X test Plugin
+PROJECT_VERSION = 1.0
 
 REBAR_GIT_CLONE_OPTIONS += --depth 1
 export REBAR_GIT_CLONE_OPTIONS
